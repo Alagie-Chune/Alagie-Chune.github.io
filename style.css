@@ -1,0 +1,238 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, verdana, sans-serif;
+	text-align: center;
+	line-height: 1.8;
+	background-color: #666;
+	color: #F0F8FF;
+}
+
+
+ a {
+	text-decoration: none;
+	color: #F0F8FF;
+}
+
+
+.intro {
+    top: 0;
+    min-height: 55vh;
+    padding-top: 35vh;
+    background-image: url(./img/pushkar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.intro h1, p {
+	padding-left: 88px;
+}
+
+.intro p {
+	text-decoration: underline;
+}
+
+#navbar {
+	background-color: #666; /*rgba(0, 0, 0, 0.6);*/
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+nav ul {
+	text-align: right;
+	position: fixed;
+	width: 100%;
+}
+
+nav li {
+	display: inline-block;
+	margin: 55px;
+	margin-bottom: 15px;
+	margin-top: 25px;
+}
+
+nav li a {
+     text-decoration: none;
+     color: #F0F8FF;
+}
+
+nav li a:hover {
+	font-weight: bold;
+	color: #CD853F;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anime {
+	100% {
+		color: #F0F8FF;
+	}
+}
+
+
+/*.work {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+
+.project {
+	display: inline-block;
+	overflow: hidden;
+	width: 300px;
+	height: 210px;
+	margin: 40px 100px; 
+}
+
+.project-pic {
+	width: 100%;
+	height: auto;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    img {
+    	width: 100%;
+    }
+}*/
+
+
+.work {
+   background: #CD853F;     /*#2F4F4F;*/
+   padding: 40px 0;
+}
+
+
+.work_header {
+    margin-top: px;
+    font-weight: normal;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	margin: 30px;
+}
+
+
+.row-box {
+	padding: 12px;
+}
+
+/*.responsive {
+	float: left;
+	width: 25%;
+}*/
+
+.project-pic {
+	width: 100%;
+	border-radius: 50%;
+	border: 3px solid #F0F8FF;
+}
+
+.project-pic:hover {
+	opacity: 0.6;
+	border-color: #8FBC8F;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.link-title {
+	font-size: 1.2em;
+}
+
+.get_started {
+	display: block;
+	width: 180px;
+	height: 30px;
+	margin: 20px auto 90px;
+	font-weight: bold;
+	border: 2px solid #F0F8FF;;
+	border-radius: 40%;
+	padding: 10px;
+	cursor: pointer
+}
+
+.get_started:hover {
+   background-color: #8FBC8F;
+}
+
+#contact {
+	background-color: #8FBC8F;
+	height: 300px;
+	margin-top: -60px;
+}
+
+.contact_header {
+	padding-top: 60px;
+	margin-bottom: 30px;
+	color: #222;
+	font-size: 1.2em;
+}
+
+.contact_detail {
+	padding: 18px;
+}
+
+.contact_detail:hover {
+	color: #666;      /*rgba(0, 0, 0, 0.7);*/ 
+}
+
+footer {
+	/*background-color: #2E8B57;*/
+	padding: 20px;
+	line-height: 50px;
+	text-align: right;
+	font-size: 1.1em;
+}
+
+@media screen and (max-width: 650px) {
+	.row {
+		width: 80%;
+		display: block;
+     }
+
+     #navbar {
+     	text-align: center;
+     }
+
+     .intro h1, p {
+     	text-align: center;
+     	padding-left: 15px;
+     }
+
+     .contact_header {
+         padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.intro h1 {
+		margin-top: 40px;
+	}
+
+	#contact {
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+
+	.contact_header {
+         padding-top: 10px;
+	}
+}

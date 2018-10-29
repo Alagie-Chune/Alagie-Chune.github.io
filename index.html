@@ -1,23 +1,91 @@
------
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My portfolio website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devic=width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<nav>
+  <ul id="navbar">
+  <li><a href="#welcome-section">Home</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
   </ul>
+</nav>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div id="welcome-section" class="intro">
+  <h1>Hi, my name is Alagie.</h1>
+  <p>An aspiring web developer</p> 
 </div>
+
+<div id="projects" class="work"> 
+  <h1 class="work-header">These are my projects...</h1>
+
+  <div class="row">
+  	<div class="row-box">
+  <a href="https://codepen.io/Alagie_1/pen/zmaKEp" target="_blank" class="project-tile">
+    <img class="project-pic" src="./img/car wash.png" alt="project">
+	<div class="link-title">Fictional car wash</div>
+  </a>
+  </div>
+  
+  <div class="row-box">
+  <a href="https://codepen.io/Alagie_1/pen/PdXwXN" target="_blank" class="project-tile">
+    <img class="project-pic" src="./img/product.png" alt="project" style="">
+	<div class="link-title">Product landing page</div>
+  </a>
+  </div>
+
+ <div class="row-box">
+  <a href="https://codepen.io/Alagie_1/pen/OorwRE" target="_blank" class="project-tile">
+    <img class="project-pic" src="./img/tribute.png" alt="project" style="">
+	<div class="link-title">Tribute page</div>
+  </a>
+  </div>
+  
+  <div class="row-box">
+  <a href="https://codepen.io/Alagie_1/pen/yxGxzM" target="_blank" class="project-tile">
+    <img class="project-pic" src="./img/survey.png" alt="project" style="">
+	 <div class="link-title">Survey form</div>
+  </a>
+  </div>
+ 
+   <div class="row-box">
+  <a href="https://codepen.io/Alagie_1/pen/aaMaBp" target="_blank" class="project-tile">
+    <img class="project-pic" src="./img/technical.png" alt="project">
+	<div class="link-title">Technical documentation page</div>
+  </a>
+  </div>
+</div>
+  
+  <div class="get_started">
+  <a href="https://codepen.io/Alagie_1/" target="_blank">GET STARTED</a>
+   </div>
+   </div>
+ 
+<div id="contact">
+  <div class="contact_header">
+    <h1>Let's get intouch...</h1>
+    <p>What's your favourite time of the day to have a coffee?</p>
+  </div>
+
+  <a id="profile-link" href="https://github.com/Alagie-Chune" target="_blank" class="contact_detail">
+  	<i class="fab fa-github fa-3x"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/alagie-chune-b77b59169/" target="_blank" class="contact_detail">
+  	<i class="fab fa-linkedin fa-3x"></i>
+  </a>
+  <a href="https://twitter.com/Alachune91?lang=en" target="_blank" class="contact_detail">
+  	<i class="fab fa-twitter fa-3x"></i>
+  </a>
+</div>
+
+<footer>
+	<p>Copyright &copy 2018 - Alagie.</p>
+</footer>
+</body>
+</html>
