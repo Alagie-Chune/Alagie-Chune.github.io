@@ -241,16 +241,12 @@ footer {
 	.row {
 		width: 80%;
 		display: block;
-     }
+            }
 
      #navbar {
      	text-align: center;
      }
       
-       .intro {
-	padding-top: -20px;
-	}
-		
      .intro h1, p {
 	padding-top: 30px;
      	text-align: center;
