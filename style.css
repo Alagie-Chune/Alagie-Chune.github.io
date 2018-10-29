@@ -246,7 +246,11 @@ footer {
      #navbar {
      	text-align: center;
      }
-
+      
+       .intro {
+	padding-top: 40px;
+	}
+		
      .intro h1, p {
 	padding-top: 30px;
      	text-align: center;
