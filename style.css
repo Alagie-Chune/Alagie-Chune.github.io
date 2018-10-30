@@ -238,14 +238,14 @@ footer {
 }
 
 @media screen and (min-width: 375px) {
-	.row {
+	/*.row {
 		width: 80%;
 		display: block;
             }
 
-     #navbar {
+     /*#navbar {
      	text-align: center;
-     }
+     }*/
       
      .intro h1, p {
 	padding-top: 30px;
