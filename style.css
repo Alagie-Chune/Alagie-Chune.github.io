@@ -239,8 +239,7 @@ footer {
 
 @media screen and (min-width: 375px) {
          .intro h1, p {
-	 margin-top: 20px;
-	 margin-bottom: 40px;
+	 margin-top: 60px;
      	text-align: center;
      	padding-left: 15px;
      }
@@ -250,7 +249,7 @@ footer {
 	}
 
 	#contact {
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 10px;
+		padding-bottom: 20px;
 	}
 }
