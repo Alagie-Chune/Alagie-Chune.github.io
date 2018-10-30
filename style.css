@@ -202,7 +202,7 @@ footer {
 	font-size: 1.1em;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
 	.row {
 		width: 80%;
 		display: block;
@@ -234,31 +234,5 @@ footer {
 
 	.contact_header {
          padding-top: 10px;
-	}
-}
-
-@media screen and (min-width: 375px) {
-	/*.row {
-		width: 80%;
-		display: block;
-            }
-
-     /*#navbar {
-     	text-align: center;
-     }*/
-      
-     .intro h1, p {
-	padding-top: 30px;
-     	text-align: center;
-     	padding-left: 15px;
-     }
-
-     .contact_header {
-         padding-top: 30px;
-	}
-
-	#contact {
-		padding-top: 30px;
-		padding-bottom: 60px;
 	}
 }
