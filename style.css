@@ -238,15 +238,15 @@ footer {
 }
 
 @media screen and (min-width: 375px) {
-     .intro h1, p {
-	 padding-top: 20px;
-	 padding-bottom: 40px;
+         .intro h1, p {
+	 margin-top: 20px;
+	 margin-bottom: 40px;
      	text-align: center;
      	padding-left: 15px;
      }
 
      .contact_header {
-         padding-top: 30px;
+         padding-top: 60px;
 	}
 
 	#contact {
